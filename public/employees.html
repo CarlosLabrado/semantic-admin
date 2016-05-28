@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/admin.css">
+    <link rel="stylesheet" type="text/css" href="./css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/sidebar.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/icon.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script src="./js/admin.js"></script>
+    <script src="./js/semantic.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Dashboard Theme | Employees</title>
+  </head>
+
+  <body data-page="employees">
+    <!-- Sidebar menu - responsive only -->
+    <div class="ui sidebar inverted vertical menu">
+      <a class="item" href="./login.html">
+        <h4 class="ui grey header">John Doe</h4>
+        <p>Sign Out</p>
+      </a>
+      <a class="item" href="./index.html">
+        Dashboard
+      </a>
+      <a class="item" href="./sales.html">
+        Sales
+        <div class="ui label">11</div>
+      </a>
+      <a class="item" href="./products.html">
+        Products
+        <div class="ui label">2</div>
+      </a>
+      <a class="item" href="./customers.html">
+        Customers
+      </a>
+      <a class="active gray item" href="./employees.html">
+        Employees
+      </a>
+    </div>
+
+    <div class="pusher">
+      <div class="ui grid container">
+        <!-- Non-responsive menu -->
+        <div class="ui left fixed vertical inverted menu">
+          <a class="item" href="./login.html">
+            <h4 class="ui grey header">John Doe</h4>
+            <p>Sign Out</p>
+          </a>
+          <a class="item" href="./index.html">
+            Dashboard
+          </a>
+          <a class="item" href="./sales.html">
+            Sales
+            <div class="ui label">11</div>
+          </a>
+          <a class="item" href="./products.html">
+            Products
+            <div class="ui label">2</div>
+          </a>
+          <a class="item" href="./customers.html">
+            Customers
+          </a>
+          <a class="active gray item" href="./employees.html">
+            Employees
+          </a>
+        </div>
+        <div class="ui main grid">
+          <!-- Responsive top menu -->
+          <div class="ui fixed inverted main menu">
+            <div class="ui container">
+              <a class="launch icon item sidebar-toggle">
+                <i class="sidebar icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="ui secondary pointing fluid menu">
+            <h2 class="ui header">Employees</h2>
+
+            <div class="right menu">
+              <a class="ui active item">
+                Staff
+              </a>
+              <a class="ui disabled item">
+                Hours
+              </a>
+            </div>
+          </div>
+
+          <div class="ui special three cards">
+            <div class="card">
+              <div class="blurring dimmable image">
+                <div class="ui dimmer">
+                  <div class="content">
+                    <div class="center">
+                      <div class="ui inverted icon button">
+                        <i class="add icon"></i>
+                        Add Manager
+                      </div>
+                      <div class="ui inverted button">View</div>
+                    </div>
+                  </div>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png">
+              </div>
+              <div class="content">
+                <a class="header">Managers</a>
+                <div class="meta">
+                  <span class="date">Created in Sep 2014</span>
+                </div>
+              </div>
+              <div class="extra content">
+                <a>
+                  <i class="users icon"></i>
+                  2 Members
+                </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="blurring dimmable image">
+                <div class="ui inverted dimmer">
+                  <div class="content">
+                    <div class="center">
+                      <div class="ui primary icon button">
+                        <i class="add icon"></i>
+                        Add Stockist
+                      </div>
+                      <div class="ui secondary button">View</div>
+                    </div>
+                  </div>
+                </div>
+                <img src="./images/ron_240x272.png">
+              </div>
+              <div class="content">
+                <a class="header">Stockists</a>
+                <div class="meta">
+                  <span class="date">Created in Aug 2014</span>
+                </div>
+              </div>
+              <div class="extra content">
+                <a>
+                  <i class="users icon"></i>
+                  10 Members
+                </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="content">
+                <div class="header">Add Employee</div>
+              </div>
+              <div class="extra content">
+                <button class="ui button add-staff">Add Staff</button>
+              </div>
+            </div>
+
+            <div class="ui modal">
+              <div class="header">New Employee</div>
+              <div class="content">
+                <form class="ui form">
+                  <div class="field">
+                    <label>First Name</label>
+                    <input type="text" name="first-name" placeholder="First Name">
+                  </div>
+                  <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" name="last-name" placeholder="Last Name">
+                  </div>
+                  <div class="field">
+                    <div class="ui checkbox">
+                      <input type="checkbox" tabindex="0" class="hidden">
+                      <label>Manager</label>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui slider checkbox">
+                      <input type="checkbox" tabindex="0" class="hidden">
+                      <label>Stockist</label>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="ui toggle checkbox">
+                      <input type="checkbox" tabindex="0" class="hidden">
+                      <label>Part-Time</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="actions">
+                <div class="ui primary button">Save</div>
+                <div class="ui cancel button">Cancel</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ui mobile cards">
+            <div class="card">
+              <div class="content">
+                <img class="right floated mini ui image" src="https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png">
+                <div class="header">
+                  Managers
+                </div>
+                <div class="meta">
+                  <i class="users icon"></i>
+                  2 Members
+                </div>
+                <div class="description">
+                  Created in Sep 2014
+                </div>
+              </div>
+              <div class="extra content">
+                <div class="ui two buttons">
+                  <div class="ui basic green button">Add Manager</div>
+                  <div class="ui basic teal button">View</div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <img class="right floated mini ui image" src="./images/ron_240x272.png">
+                <div class="header">
+                  Stockists
+                </div>
+                <div class="meta">
+                  <i class="users icon"></i>
+                  10 Members
+                </div>
+                <div class="description">
+                  Created in Aug 2014
+                </div>
+              </div>
+              <div class="extra content">
+                <div class="ui two buttons">
+                  <div class="ui basic green button">Add Stockist</div>
+                  <div class="ui basic teal button">View</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

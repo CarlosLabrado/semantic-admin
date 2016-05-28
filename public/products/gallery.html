@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+    <link rel="stylesheet" type="text/css" href="../css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/sidebar.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/icon.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <script src="../js/admin.js"></script>
+    <script src="../js/semantic.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Dashboard Theme | Gallery</title>
+  </head>
+
+  <body data-page="gallery">
+    <!-- Sidebar menu - responsive only -->
+    <div class="ui sidebar inverted vertical menu">
+      <a class="item" href="../login.html">
+        <h4 class="ui grey header">John Doe</h4>
+        <p>Sign Out</p>
+      </a>
+      <a class="item" href="../index.html">
+        Dashboard
+      </a>
+      <a class="item" href="../sales.html">
+        Sales
+        <div class="ui label">11</div>
+      </a>
+      <a class="active gray item" href="../products.html">
+        Products
+        <div class="ui label">2</div>
+      </a>
+      <a class="item" href="../customers.html">
+        Customers
+      </a>
+      <a class="item" href="../employees.html">
+        Employees
+      </a>
+    </div>
+
+    <div class="pusher">
+      <div class="ui grid container">
+        <!-- Non-responsive menu -->
+        <div class="ui left fixed vertical inverted menu">
+          <a class="item" href="../login.html">
+            <h4 class="ui grey header">John Doe</h4>
+            <p>Sign Out</p>
+          </a>
+          <a class="item" href="../index.html">
+            Dashboard
+          </a>
+          <a class="item" href="../sales.html">
+            Sales
+            <div class="ui label">11</div>
+          </a>
+          <a class="active gray item" href="../products.html">
+            Products
+            <div class="ui label">2</div>
+          </a>
+          <a class="item" href="../customers.html">
+            Customers
+          </a>
+          <a class="item" href="../employees.html">
+            Employees
+          </a>
+        </div>
+        <div class="ui main grid">
+          <!-- Responsive top menu -->
+          <div class="ui fixed inverted main menu">
+            <div class="ui container">
+              <a class="launch icon item sidebar-toggle">
+                <i class="sidebar icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="ui secondary pointing fluid menu">
+            <h2 class="ui header">Products</h2>
+
+            <div class="right menu">
+              <a class="ui item" href="../products.html">
+                Inventory
+              </a>
+              <a class="ui active item" href="">
+                Gallery
+              </a>
+            </div>
+          </div>
+
+          <div class="ui divided product items">
+            <div class="item">
+              <div class="ui small image">
+                <a href="http://www.amazon.com/gp/product/0393089037?ie=UTF8&camp=1789&creativeASIN=0393089037&linkCode=xm2&tag=personalwe03c-20"><img src="http://ecx.images-amazon.com/images/I/4162kFSAHPL._SX399_BO1,204,203,200_.jpg"></a>
+              </div>
+              <div class="content">
+                <div class="header">Item 1</div>
+                <div class="meta">
+                  <span class="price">$24</span>
+                </div>
+                <div class="ui star rating" data-rating="4"></div>
+                <div class="description">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="ui small image">
+                <a href="http://www.amazon.com/gp/product/1781315388?ie=UTF8&camp=1789&creativeASIN=1781315388&linkCode=xm2&tag=personalwe03c-20"><img src="http://ecx.images-amazon.com/images/I/51c0sSqolYL._SX430_BO1,204,203,200_.jpg"></a>
+              </div>
+              <div class="content">
+                <div class="header">Item 2</div>
+                <div class="meta">
+                  <span class="price">$25</span>
+                </div>
+                <div class="ui star rating" data-rating="3"></div>
+                <div class="description">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="ui small image">
+                <a href="http://www.amazon.com/gp/product/0316378216?ie=UTF8&camp=1789&creativeASIN=0316378216&linkCode=xm2&tag=personalwe03c-20"><img src="http://ecx.images-amazon.com/images/I/51-RcNhEZRL._SY498_BO1,204,203,200_.jpg"></a>
+              </div>
+              <div class="content">
+                <div class="header">Item 3</div>
+                <div class="meta">
+                  <span class="price">$27</span>
+                </div>
+                <div class="ui star rating" data-rating="4"></div>
+                <div class="description">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="ui small image">
+                <a href="http://www.amazon.com/gp/product/0316229970?ie=UTF8&camp=1789&creativeASIN=0316229970&linkCode=xm2&tag=personalwe03c-20"><img src="http://ecx.images-amazon.com/images/I/51UUcLtkQJL._SX335_BO1,204,203,200_.jpg"></a>
+              </div>
+              <div class="content">
+                <div class="header">Item 4</div>
+                <div class="meta">
+                  <span class="price">$27</span>
+                </div>
+                <div class="ui star rating" data-rating="4"></div>
+                <div class="description">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="ui small image">
+                <a href="http://www.amazon.com/gp/product/3899555600?ie=UTF8&camp=1789&creativeASIN=3899555600&linkCode=xm2&tag=personalwe03c-20"><img src="http://ecx.images-amazon.com/images/I/41wLk-vR5vL._SX375_BO1,204,203,200_.jpg"></a>
+              </div>
+              <div class="content">
+                <div class="header">Item 5</div>
+                <div class="meta">
+                  <span class="price">$41</span>
+                </div>
+                <div class="ui star rating" data-rating="4"></div>
+                <div class="description">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
